@@ -20,7 +20,7 @@ resource "azurerm_kubernetes_cluster" "test01" {
   }
 }
 
-local_file {
+resource "local_file" "kubeconfig" {
   content = azurerm_kubernetes_cluster.test01.kube_config_raw
-  filename = "~/.kube/config"
+  filename = "/home/xetamus/.kube/config"
 }

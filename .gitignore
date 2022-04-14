@@ -1,3 +1,4 @@
 kubeconfig
 .terraform*
 *.tfstate*
+geerlingguy.k8s_manifests
